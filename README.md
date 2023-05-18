@@ -23,12 +23,12 @@
 
 
 # 체크포인트
-1. Saga (Pub / Sub)
-2. CQRS
-3. Compensation / Correlation
-4. Request / Response
-5. Circuit Breaker
-6. Gateway / Ingress
+■ 대상 마이크로서비스 : 고객, 상점주, 라이더
+1. Eventstorming Model
+■ Microservice Orchestration on EKS
+2. Saga (Pub / Sub) 확인 (클러스터에 Kafka 설치 후)
+3. Service Router 설치
+4. Zero downtime Deployment 
 
 # Saga (Pub / Sub)
 ![image](https://user-images.githubusercontent.com/94352502/203248368-ad036581-af4f-4412-8f12-d295c604798e.png)
