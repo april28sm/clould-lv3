@@ -27,72 +27,7 @@
 ![subpub](https://github.com/april28sm/clould-lv3/assets/94352502/664d5cd2-0e7c-46ad-a589-9643cfa81031)
 
 3. Service Router 설치
+![serviceRouter](https://github.com/april28sm/clould-lv3/assets/94352502/83b94b59-e5dc-4718-aa8d-d944c396baff)
+
 4. Zero downtime Deployment 
-
-# Saga (Pub / Sub)
-![image](https://user-images.githubusercontent.com/94352502/203248368-ad036581-af4f-4412-8f12-d295c604798e.png)
-![image](https://user-images.githubusercontent.com/94352502/203259335-2f5b7011-e914-46d2-8812-fa5002802e87.png)
-![image](https://user-images.githubusercontent.com/94352502/203259541-176b062e-49df-482f-b922-c7b46ade1a92.png)
-
-# Request / Response
-![image](https://user-images.githubusercontent.com/94352502/203259956-88be85be-8868-43c5-b3dd-03e6eb3c0574.png)
-
-
-# Circuit Breaker
-![image](https://user-images.githubusercontent.com/94352502/203260129-9c05a7d0-1433-4b66-bcd3-b76fbd7e2d0e.png)
-
-
-# Gateway / Ingress
-```
-
-spring:
-  profiles: docker
-  cloud:
-    gateway:
-      routes:
-        - id: front
-          uri: http://front:8080
-          predicates:
-            - Path=/주문/**, /orders/**, /payments/**, /메뉴판/**, /통합주문상태/**
-        - id: store
-          uri: http://store:8080
-          predicates:
-            - Path=/주문관리/**, /storeOrders/**, /주문상세보기/**, /topFoods/**
-        - id: customer
-          uri: http://customer:8080
-          predicates:
-            - Path=/notificationLogs/**, /orderStatuses/**
-        - id: delivery
-          uri: http://delivery:8080
-          predicates:
-            - Path=/deliveries/**, 
-        - id: frontend
-          uri: http://frontend:8080
-          predicates:
-            - Path=/**
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins:
-              - "*"
-            allowedMethods:
-              - "*"
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
-
-server:
-  port: 8080
-```
-
-
-
-
-# 추가사항 1 (포장 주문 및 배송 완료 상태 확인)
-![image](https://user-images.githubusercontent.com/94352502/203258397-b38b292c-efbd-4f0d-b7f4-ca388881c160.png)
-
-
-
-# 추가사항 2 (주문 시작 및 거절 요리 시작 및 상태 확인)
-![image](https://user-images.githubusercontent.com/94352502/203258912-fd59e714-8d58-40b5-aaf9-39d1916f0881.png)
-
+![zerodowntime](https://github.com/april28sm/clould-lv3/assets/94352502/b6d29fa2-9c23-4cd7-829f-89249adb040d)
