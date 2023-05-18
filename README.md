@@ -23,9 +23,9 @@
 
 
 # 체크포인트
-■ 대상 마이크로서비스 : 고객, 상점주, 라이더
 1. Eventstorming Model
-■ Microservice Orchestration on EKS
+![이벤트스토밍](https://github.com/april28sm/clould-lv3/assets/94352502/c3dae2f8-c1c7-41ca-a3b9-aa7b1f95b5c4)
+
 2. Saga (Pub / Sub) 확인 (클러스터에 Kafka 설치 후)
 3. Service Router 설치
 4. Zero downtime Deployment 
