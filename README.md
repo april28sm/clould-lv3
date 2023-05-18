@@ -19,9 +19,6 @@
 • 고객이 주문상태를 중간중간 조회한다.
 • 라이더의 배달이 끝나면 배송확인 버튼으로 모든 거래가 완료된다.
 
-![image](https://user-images.githubusercontent.com/94352502/203246476-93a1c642-b1c5-462c-95d5-9df5ddadbd3b.png)
-
-
 # 체크포인트
 1. Eventstorming Model
 ![이벤트스토밍](https://github.com/april28sm/clould-lv3/assets/94352502/c3dae2f8-c1c7-41ca-a3b9-aa7b1f95b5c4)
