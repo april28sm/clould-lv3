@@ -31,7 +31,7 @@
 
 ![serviceRouter](https://github.com/april28sm/clould-lv3/assets/94352502/83b94b59-e5dc-4718-aa8d-d944c396baff)
 
-4. Zero downtime Deployment 
+4. Zero downtime Deployment (store - kubernetes - deployment.yaml 에서 설정함)
 
 ![zerodowntime](https://github.com/april28sm/clould-lv3/assets/94352502/b6d29fa2-9c23-4cd7-829f-89249adb040d)
 
